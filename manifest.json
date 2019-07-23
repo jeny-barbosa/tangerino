@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Pontos Tangerino",
-  "version": "1.8.8.2",
+  "name": "PTang",
+  "version": "2.1.2",
   "description": "Importar para .xlsx informações dos pontos registrados.",
   "icons": {
     "128": "icone.png"
@@ -11,12 +11,8 @@
     "tabs",
     "http://*/*",
     "https://*/*",
-    "*://*/*",
-    "background"
+    "*://*/*"
   ],
-  "background": {
-    "scripts": ["background.js"]
-  },
   "browser_action": {
     "default_popup": "popup.html"
   },
@@ -26,15 +22,15 @@
         "http://*/*",
         "https://*/*",
         "*://*/*",
-        "https://app.tangerino.com.br/*"],
+        "*://*.tangerino.com.br/*"
+      ],
       "js": [
         "jquery-1.9.1.min.js",
         "xlsx.core.min.js",
         "Blob.min.js",
         "FileSaver.min.js",
         "tableexport.min.js",
-        "background.js",
-        "popup.js"
+        "background.js"
       ]
     }
   ]
